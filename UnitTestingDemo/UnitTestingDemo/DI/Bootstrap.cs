@@ -21,7 +21,7 @@ namespace UnitTestingDemo.DI
         public void Register()
         {
 
-            TinyIoCContainer.Current.Register<IConfigurationProvider, ConfigurationProvider>().AsPerRequestSingleton();
+            TinyIoCContainer.Current.Register<IConfigurationProvider, TestConfigurationProvider>().AsPerRequestSingleton();
             TinyIoCContainer.Current.Register<IEmailProvider, EmailProvider>().AsPerRequestSingleton();
             TinyIoCContainer.Current.Register<ISmtpAdapter, SmtpAdapter>().AsPerRequestSingleton();
         }

@@ -11,6 +11,11 @@ namespace UnitTestingDemo.Controllers
     public class NotificationController : Controller
     {
         private readonly IEmailProvider _emailProvider;
+
+        public NotificationController(IEmailProvider emailProvider)
+        {
+            _emailProvider = emailProvider;
+        }
         // GET: Notification
         public ActionResult Index()
         {

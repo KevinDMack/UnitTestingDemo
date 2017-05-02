@@ -208,6 +208,7 @@
     <Compile Include="Providers\Constants.cs" />
     <Compile Include="Providers\SmtpAdapter.cs" />
     <Compile Include="Providers\SmtpProvider.cs" />
+    <Compile Include="Providers\TestConfigurationProvider.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="TinyIoC.cs" />
     <Compile Include="TinyIoCAspNetExtensions.cs" />
