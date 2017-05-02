@@ -43,7 +43,8 @@ namespace UnitTestingDemo.Providers
             }
             else
             {
-                throw new ArgumentOutOfRangeException("ConfigKey:" + key);
+                //throw new ArgumentOutOfRangeException("ConfigKey:" + key);
+                throw new ArgumentException("ConfigKey:" + key);
             }
         }
 

@@ -38,7 +38,8 @@ namespace UnitTestingDemo.Providers
                 var mail = new MailMessage(fromAddress, model.EmailAddress, model.EmailSubject, model.EmailBody);
                 mail.IsBodyHtml = true;
 
-                smtpAdapter.SendEmail(host, port, mail);
+                smtpAdapter.SendEmail(host,port,mail);
+
                 return true;
             }
             catch (Exception ex)

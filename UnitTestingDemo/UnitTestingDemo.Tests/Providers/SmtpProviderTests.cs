@@ -39,7 +39,7 @@ namespace UnitTestingDemo.Tests.Providers
                 From = new MailAddress("test@test.com")
             })).Returns("Email Sent");
 
-            var provider = new EmailProvider(mockConfiguration.Object,mockSmtpAdapter.Object);
+            var provider = new EmailProvider(mockConfiguration.Object, mockSmtpAdapter.Object);
 
             var result = provider.SendEmail(emailModel);
 
