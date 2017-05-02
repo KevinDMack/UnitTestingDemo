@@ -24,7 +24,7 @@ namespace UnitTestingDemo.Tests.Providers
 
             var emailModel = new EmailModel()
             {
-                EmailAddress = "kevin.mack@microsoft.com",
+                EmailAddress = "kevin@test.com",
                 EmailBody = "Hello World!",
                 EmailSubject = "Hi!",
                 isValid = true
